@@ -1,0 +1,125 @@
+<div mdl>
+  <h1>Универ</h1>
+  <form [formGroup]="formUniver" 
+        (ngSubmit)="handleSubmit(formUniver, 'un')">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formUniverTitle"
+                [formControl]="formUniver.controls['title']">
+      <label class="mdl-textfield__label" for="formUniverTitle">Title</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formUniverAddress"
+                [formControl]="formUniver.controls['address']">
+      <label class="mdl-textfield__label" for="formUniverAddress">Address</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formUniverPhone"
+                [formControl]="formUniver.controls['phone']">
+      <label class="mdl-textfield__label" for="formUniverPhone">Phone</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formUniverSite"
+                [formControl]="formUniver.controls['site']">
+      <label class="mdl-textfield__label" for="formUniverSite">Site</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formUniverEmail"
+                [formControl]="formUniver.controls['email']">
+      <label class="mdl-textfield__label" for="formUniverEmail">Email</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formUniverDescription"
+                [formControl]="formUniver.controls['description']">
+      <label class="mdl-textfield__label" for="formUniverDescription">Description</label>
+    </div>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" type="submit">Submit</button>
+  </form>
+  <h1>УТЦ</h1>
+  <form [formGroup]="formUtc" 
+        (ngSubmit)="handleSubmit(formUtc, 'ut')">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formUtcTitle"
+                [formControl]="formUtc.controls['title']">
+      <label class="mdl-textfield__label" for="formUtcTitle">Title</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formUtcAddress"
+                [formControl]="formUtc.controls['address']">
+      <label class="mdl-textfield__label" for="formUtcAddress">Address</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formUtcPhone"
+                [formControl]="formUtc.controls['phone']">
+      <label class="mdl-textfield__label" for="formUtcPhone">Phone</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formUtcSite"
+                [formControl]="formUtc.controls['site']">
+      <label class="mdl-textfield__label" for="formUtcSite">Site</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formUtcEmail"
+                [formControl]="formUtc.controls['email']">
+      <label class="mdl-textfield__label" for="formUtcEmail">Email</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formUtcDescription"
+                [formControl]="formUtc.controls['description']">
+      <label class="mdl-textfield__label" for="formUtcDescription">Description</label>
+    </div>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" type="submit">Submit</button>
+  </form>
+  <h1>АМП</h1>
+  <form [formGroup]="formAmp" 
+        (ngSubmit)="handleSubmit(formAmp, 'a')">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formAmpTitle"
+                [formControl]="formAmp.controls['title']">
+      <label class="mdl-textfield__label" for="formAmpTitle">Title</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formAmpAddress"
+                [formControl]="formAmp.controls['address']">
+      <label class="mdl-textfield__label" for="formAmpAddress">Address</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formAmpPhone"
+                [formControl]="formAmp.controls['phone']">
+      <label class="mdl-textfield__label" for="formAmpPhone">Phone</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formAmpSite"
+                [formControl]="formAmp.controls['site']">
+      <label class="mdl-textfield__label" for="formAmpSite">Site</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formAmpEmail"
+                [formControl]="formAmp.controls['email']">
+      <label class="mdl-textfield__label" for="formAmpEmail">Email</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formAmpDescription"
+                [formControl]="formAmp.controls['description']">
+      <label class="mdl-textfield__label" for="formAmpDescription">Description</label>
+    </div>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" type="submit">Submit</button>
+  </form>
+</div>

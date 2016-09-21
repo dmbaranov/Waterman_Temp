@@ -1,0 +1,6 @@
+<div>Registration page</div>
+<div [ngSwitch]="urlParam">
+  <ampform-component *ngSwitchCase="'amp'"></ampform-component>
+  <utcform-component *ngSwitchCase="'utc'"></utcform-component>
+  <univerform-component *ngSwitchCase="'university'"></univerform-component>
+</div>

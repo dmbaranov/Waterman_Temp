@@ -1,0 +1,26 @@
+<div class="mdl-card mdl-shadow--2dp card" mdl>
+  <div class="mdl-card__title mdl-card--expand card__header">
+    <h2 class="mdl-card__title-text">Форма регистрации УТЦ</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    <form [formGroup]="utcForm"
+          (ngSubmit)="handleSubmit(utcForm, 'utc')">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col"
+          [class.has-error]="email.touched && !email.valid">
+        <input class="mdl-textfield__input"
+                  id="utcFormEmail"
+                  [formControl]="utcForm.controls['email']">
+        <label class="mdl-textfield__label" for="utcFormEmail">Email</label>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col"
+          [class.has-error]="password.touched && !password.valid">
+        <input class="mdl-textfield__input"
+                  id="utcFormPassword"
+                  type="password"
+                  [formControl]="utcForm.controls['password']">
+        <label class="mdl-textfield__label" for="utcFormPassword">Password</label>
+      </div>
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit" [disabled]="!utcForm.valid">Register</button>
+    </form>
+  </div>
+</div>

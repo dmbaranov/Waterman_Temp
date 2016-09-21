@@ -1,0 +1,37 @@
+<div class="mdl-grid" mdl>
+  <div class="mdl-cell mdl-cell--12-col test">
+    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+
+      <div class="mdl-tabs__tab-bar">
+          <a href="#univer-panel" class="mdl-tabs__tab is-active">Университеты</a>
+          <a href="#amp-panel" class="mdl-tabs__tab">АМП</a>
+          <a href="#utc-panel" class="mdl-tabs__tab">УТЦ</a>
+      </div>
+
+      <div class="mdl-tabs__panel is-active" id="univer-panel">
+        <div *ngIf="univers">
+          <div *ngFor="let univer of univers">
+            <studycard-component [data]="univer"
+                                 [type]="'un'"></studycard-component>
+          </div>
+        </div>
+      </div>
+      <div class="mdl-tabs__panel" id="amp-panel">
+        <div *ngIf="amps">
+          <div *ngFor="let amp of amps">
+            <studycard-component [data]="amp"
+                                 [type]="'a'"></studycard-component>
+          </div>
+        </div>
+      </div>
+      <div class="mdl-tabs__panel" id="utc-panel">
+        <div *ngIf="utcs">
+          <div *ngFor="let utc of utcs">
+            <studycard-component [data]="utc"
+                                 [type]="'ut'"></studycard-component>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

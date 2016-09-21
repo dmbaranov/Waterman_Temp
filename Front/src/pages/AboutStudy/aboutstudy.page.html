@@ -1,0 +1,10 @@
+<div *ngIf="data">
+  <div [ngSwitch]="paramType">
+    <aboutuniver-component *ngSwitchCase="'un'"
+                           [data]="data"></aboutuniver-component>
+    <aboututc-component *ngSwitchCase="'ut'"
+                           [data]="data"></aboututc-component>
+    <aboutamp-component *ngSwitchCase="'a'"
+                           [data]="data"></aboutamp-component>
+  </div>
+</div>

@@ -1,0 +1,74 @@
+<div mdl>
+  <form [formGroup]="form" 
+        (ngSubmit)="handleSubmit(form)">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formTitle"
+                [formControl]="form.controls['title']">
+      <label class="mdl-textfield__label" for="formTitle">Title</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formAddress"
+                [formControl]="form.controls['address']">
+      <label class="mdl-textfield__label" for="formAddress">Address</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formPhone"
+                [formControl]="form.controls['phone']">
+      <label class="mdl-textfield__label" for="formTitle">Phone</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formSite"
+                [formControl]="form.controls['site']">
+      <label class="mdl-textfield__label" for="formSite">Title</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formEmail"
+                [formControl]="form.controls['email']">
+      <label class="mdl-textfield__label" for="formTitle">Email</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <input class="mdl-textfield__input"
+                id="formDescription"
+                [formControl]="form.controls['description']">
+      <label class="mdl-textfield__label" for="formTitle">Description</label>
+    </div>
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" border="1">
+      <thead>
+        <tr>
+          <th rowspan="3" class="mdl-data-table__cell--non-numeric table-cell--align-center">Наименование подготовки</th>
+          <th colspan="6" class="mdl-data-table__cell--non-numeric table-cell--align-center">Дополнительные сведения</th>
+        </tr>
+        <tr>
+          <th colspan="2" class="mdl-data-table__cell--non-numeric table-cell--align-center">Пятилетняя подготовка</th>
+          <th colspan="2" class="mdl-data-table__cell--non-numeric table-cell--align-center">Первичная подготовка</th>
+          <th colspan="2" class="mdl-data-table__cell--non-numeric table-cell--align-center">Индивидуальная подготовка</th>
+        </tr>
+        <tr>
+          <th class="mdl-data-table__cell--non-numeric table-cell--align-center">Дни</th>
+          <th class="mdl-data-table__cell--non-numeric table-cell--align-center">Цена</th>
+          <th class="mdl-data-table__cell--non-numeric table-cell--align-center">Дни</th>
+          <th class="mdl-data-table__cell--non-numeric table-cell--align-center">Цена</th>
+          <th class="mdl-data-table__cell--non-numeric table-cell--align-center">Дни</th>
+          <th class="mdl-data-table__cell--non-numeric table-cell--align-center">Цена</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric">Начальная подготовка по безопасности</td>
+          <td class="table-cell--align-center"><input class="mdl-textfield__input" type="number" [formControl]="form.controls['security_fiveYearsDays']"></td>
+          <td class="table-cell--align-center"><input class="mdl-textfield__input" type="text" [formControl]="form.controls['security_fiveYearsPrice']"></td>
+          <td class="table-cell--align-center"><input class="mdl-textfield__input" type="number" [formControl]="form.controls['security_firstTimeDays']"></td>
+          <td class="table-cell--align-center"><input class="mdl-textfield__input" type="text" [formControl]="form.controls['security_firstTimePrice']"></td>
+          <td class="table-cell--align-center"><input class="mdl-textfield__input" type="number" [formControl]="form.controls['security_individualDays']"></td>
+          <td class="table-cell--align-center"><input class="mdl-textfield__input" type="text" [formControl]="form.controls['security_individualPrice']"></td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored submit-button" type="submit">Submit</button>
+  </form>
+</div>

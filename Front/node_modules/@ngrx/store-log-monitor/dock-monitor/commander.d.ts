@@ -1,0 +1,20 @@
+import 'rxjs/add/operator/filter';
+import 'rxjs/add/operator/map';
+import { Observable } from 'rxjs/Observable';
+export interface ParsedCommand {
+    name?: string;
+    ctrl: boolean;
+    meta: boolean;
+    shift: boolean;
+    alt: boolean;
+    sequence?: string;
+}
+export declare class CommanderComponent {
+    private keydown$;
+    private _ignoreTags;
+    shortcut: string;
+    command: Observable<{
+        command: string;
+    }>;
+    parseCommand(s: string): ParsedCommand;
+}
